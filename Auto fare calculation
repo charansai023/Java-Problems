@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("How much distance you are going to travel:");
+        int distance=sc.nextInt();
+        
+        if (distance<=2){
+            System.out.println("The fare is $30");
+        }else if(distance>2 && distance<=5){
+            System.out.println("The fare is $50");
+        }else if(distance>5 && distance<=10){
+            System.out.println("The fare is $80");
+        }else{
+            int fare=100;
+            int dist=distance-10;
+            fare=fare+dist*10;
+            System.out.print("The fare for "+distance+"km is "+fare);
+            
+        }    
+        
+    }
+}
