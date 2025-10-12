@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static int Factorial(int num){
+	    if (num==0 ||num==1){
+	        return 1;
+	    }else {
+	        return num*Factorial(num-1);
+	    }
+	}
+		public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a number:");
+		int num=sc.nextInt();
+		int result=Factorial(num);
+		System.out.println("The factorial of "+num+" is "+result);
+		sc.close();
+		
+	}
+}
